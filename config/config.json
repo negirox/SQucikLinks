@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "sideqlinks-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/sideqlinks/SideqlinksWebPart.js",
+          "manifest": "./src/webparts/sideqlinks/SideqlinksWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SideqlinksWebPartStrings": "lib/webparts/sideqlinks/loc/{locale}.js"
+  }
+}

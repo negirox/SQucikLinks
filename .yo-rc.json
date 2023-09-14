@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.19.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.4.1"
+    },
+    "version": "1.16.1",
+    "libraryName": "side-links",
+    "libraryId": "f4220021-3c1d-42b7-a351-c94dc99f736c",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "SideLinks",
+    "solutionShortDescription": "SideLinks description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

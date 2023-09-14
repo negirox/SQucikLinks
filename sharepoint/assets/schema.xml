@@ -1,0 +1,73 @@
+<List xmlns:ows="Microsoft SharePoint" Title="Basic List" EnableContentTypes="TRUE" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Basic List" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentTypeRef ID="0x010042D0C1C200A14B6887742B6344675C8B" />
+    </ContentTypes>
+    <Fields>
+      <Field ID="{494cf615-7409-42ee-95d7-cabeb3cbe376}"
+                Name="ItemOrder"
+                DisplayName="ItemOrder"
+                Type="Number"
+                Required="FALSE" />
+      <Field ID="{6215dfb7-adf8-48af-b190-cf898af6ba7c}"
+            Name="Description"
+            DisplayName="Description"
+            Type="Text"
+            Required="FALSE"/>
+
+        <Field ID="{7e23daa1-b83b-4a1b-a8c5-58b9bd07d599}"
+            Name="IconName"
+            DisplayName="IconName"
+            Type="Text"
+            Required="FALSE"/>
+        
+        <Field ID="{76e2fb57-0375-4cc8-8df8-390112fba52c}"
+            Name="Display"
+            DisplayName="Display"
+            Type="Boolean"
+            Required="FALSE">
+         <Default>1</Default>
+        </Field>
+
+         <Field ID="{ee13202d-94ee-4f96-825e-a3bf652e3a0c}"
+            Name="QuickLinkUrl"
+            DisplayName="QuickLinkUrl"
+            Type="Text"
+            Required="FALSE"/>
+        
+        <Field ID="{8abb2e44-d056-4f26-9c05-1eb9ce3ed818}"
+            Name="BackgroundImageUrl"
+            DisplayName="BackgroundImageUrl"
+            Type="Text"
+            Required="FALSE"/>
+        
+        <Field ID="{4cb82798-74ff-4c68-8fad-87e7c7a0dba0}"
+            Name="BackgroundColor"
+            DisplayName="BackgroundColor"
+            Type="Text"
+            Required="FALSE"/>
+    </Fields>
+    <Views>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Type="Standard" />
+        <ViewFields>
+          <FieldRef Name="ItemOrder"></FieldRef>
+          <FieldRef Name="Description"></FieldRef>
+          <FieldRef Name="IconName"></FieldRef>
+          <FieldRef Name="Display"></FieldRef>
+          <FieldRef Name="QuickLinkUrl"></FieldRef>
+          <FieldRef Name="BackgroundImageUrl"></FieldRef>
+          <FieldRef Name="BackgroundColor"></FieldRef>
+        </ViewFields>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

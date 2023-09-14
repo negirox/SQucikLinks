@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+    <CustomAction
+        Title="SideQuickLinks"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="b2efc885-583e-4636-8d93-c554e7f61ba0"
+        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </CustomAction>
+      <ContentType ID="0x010042D0C1C200A14B6887742B6344675C8B" 
+           Name="SideQuickLinks" 
+           Group="SPFxSideLinks" 
+           Description="Side Links Content type">
+       <FieldRefs>
+           <FieldRef ID="{494cf615-7409-42ee-95d7-cabeb3cbe376}"/> 
+           <FieldRef ID="{6215dfb7-adf8-48af-b190-cf898af6ba7c}"/>
+           <FieldRef ID="{7e23daa1-b83b-4a1b-a8c5-58b9bd07d599}"/>
+           <FieldRef ID="{76e2fb57-0375-4cc8-8df8-390112fba52c}"/>
+           <FieldRef ID="{ee13202d-94ee-4f96-825e-a3bf652e3a0c}"/>
+           <FieldRef ID="{8abb2e44-d056-4f26-9c05-1eb9ce3ed818}"/> 
+           <FieldRef ID="{4cb82798-74ff-4c68-8fad-87e7c7a0dba0}"/>
+       </FieldRefs>
+   </ContentType> 
+    <ListInstance
+            CustomSchema="schema.xml"   
+            FeatureId="00bfea71-de22-43b2-a848-c05709900100"  
+            Title="Side Links"   
+            Description="New Side Links List for Side Links Webpart"  
+            TemplateType="100"  
+            Url="Lists/SideLinks">  
+    </ListInstance>  
+</Elements>   
